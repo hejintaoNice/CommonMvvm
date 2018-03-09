@@ -1,0 +1,13 @@
+platform :ios, '9.0'
+
+target 'BaseMvvm' do
+
+pod 'SDWebImage'
+pod 'AFNetworking'
+pod 'MJRefresh'
+pod 'Masonry', '~> 1.1.0'
+pod 'JSONModel', '~> 1.7.0'
+pod 'YYCache', '~> 1.0.4'
+pod 'FDFullscreenPopGesture'
+
+end
