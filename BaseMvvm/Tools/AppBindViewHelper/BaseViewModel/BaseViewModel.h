@@ -14,9 +14,9 @@ typedef void (^FailureBlock)();
 
 @interface BaseViewModel : NSObject
 
-@property (strong, nonatomic) ReturnValueBlock returnBlock;
-@property (strong, nonatomic) ErrorCodeBlock errorBlock;
-@property (strong, nonatomic) FailureBlock failureBlock;
+@property (nonatomic, strong) ReturnValueBlock returnBlock;
+@property (nonatomic, strong) ErrorCodeBlock errorBlock;
+@property (nonatomic, strong) FailureBlock failureBlock;
 
 -(void) setBlockWithReturnBlock: (ReturnValueBlock) returnBlock
                  WithErrorBlock: (ErrorCodeBlock) errorBlock

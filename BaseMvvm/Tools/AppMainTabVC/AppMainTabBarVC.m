@@ -1,13 +1,13 @@
 //
-//  DJMainTabBarVC.m
-//  WonderfulDJ
+//  AppMainTabBarVC.m
+//  BaseMvvm
 //
-//  Created by 何锦涛 on 2017/11/6.
-//  Copyright © 2017年 hither. All rights reserved.
+//  Created by 何锦涛 on 2018/3/14.
+//  Copyright © 2018年 hither. All rights reserved.
 //
 
-#import "DJMainTabBarVC.h"
-#import "DJNavgationController.h"
+#import "AppMainTabBarVC.h"
+#import "AppNavigationController.h"
 #import "ViewController.h"
 
 #define ClassKey   @"rootVCClassString"
@@ -15,21 +15,26 @@
 #define ImgKey     @"imageName"
 #define SelImgKey  @"selectedImageName"
 
-@interface DJMainTabBarVC ()
+@interface AppMainTabBarVC ()
 
 @property (nonatomic, strong) UIViewController *vc;
 
 @end
 
-@implementation DJMainTabBarVC
+@implementation AppMainTabBarVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     [UITabBar appearance].translucent = NO;
     self.tabBar.barTintColor = [UIColor whiteColor];
     [self setUpChildVC];
     
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 -(void)setUpChildVC{
@@ -45,7 +50,7 @@
         
         self.vc = [[NSClassFromString(dict[ClassKey]) alloc]init];
         self.vc.title = dict[TitleKey];
-        DJNavgationController *nav = [[DJNavgationController alloc] initWithRootViewController:self.vc];
+        AppNavigationController *nav = [[AppNavigationController alloc] initWithRootViewController:self.vc];
         UITabBarItem *item = nav.tabBarItem;
         item.title = dict[TitleKey];
         item.image = [[UIImage imageNamed:dict[ImgKey]]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -60,12 +65,5 @@
     
     
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 
 @end

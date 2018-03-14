@@ -15,20 +15,25 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-
-        self.backgroundColor = [UIColor whiteColor];
-        
-        [self configRadius];
-
-        [self addSubview:self.imageView];
-        [self addSubview:self.titleLabel];
-        [self addSubview:self.translucentView];
-        [self.translucentView addSubview:self.commentLabel];
-        [self addSubview:self.acView];
-        
-        [self configConstraints];
+        [self configUI];
     }
     return self;
+}
+
+- (void)configUI{
+    
+    self.backgroundColor = [UIColor whiteColor];
+    
+    [self configRadius];
+    
+    [self addSubview:self.imageView];
+    [self addSubview:self.titleLabel];
+    [self addSubview:self.translucentView];
+    [self.translucentView addSubview:self.commentLabel];
+    [self addSubview:self.acView];
+    
+    [self configConstraints];
+    
 }
 
 -(UIImageView *)imageView{
@@ -102,10 +107,7 @@
     }];
     
     [self.commentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.translucentView.mas_centerY);
-        make.left.equalTo(self.translucentView);
-        make.right.equalTo(self.translucentView).offset(-8);
-        make.top.bottom.equalTo(self.translucentView);
+        make.top.bottom.left.right.equalTo(self.translucentView);
     }];
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -119,10 +121,7 @@
 -(void)bindModel:(ComicRecommend*)model{
     
     self.titleLabel.text = model.comic_name;
-
-    NSString *string = model.last_chapter_name;
-    NSArray *array = [string componentsSeparatedByString:@" "];
-    self.commentLabel.text = array.firstObject;
+    self.commentLabel.text = model.last_chapter_name;
 
     NSString *str = @"http://image.yyhao.com/mh/$$.jpg";
     NSString *strr = [str stringByReplacingOccurrencesOfString:@"$$" withString:[NSString stringWithFormat:@"%@",model.comic_id]];

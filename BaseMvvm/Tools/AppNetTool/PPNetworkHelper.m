@@ -128,7 +128,7 @@ static NSMutableArray *_allSessionTask;
     NSParameterAssert(URL);
     URL = [NSMutableString stringWithFormat:@"%@%@",NetworkServer,URL];
     //读取缓存
-    responseCache ? responseCache([PPNetworkCache httpCacheForURL:URL parameters:parameters]) : nil;
+    responseCache ? responseCache([AppNetWorkCache httpCacheForURL:URL parameters:parameters]) : nil;
     
     NSURLSessionTask *sessionTask = [_sessionManager GET:URL parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
         
@@ -137,7 +137,7 @@ static NSMutableArray *_allSessionTask;
         [[self allSessionTask] removeObject:task];
         success ? success(responseObject) : nil;
         //对数据进行异步缓存
-        responseCache ? [PPNetworkCache setHttpCache:responseObject URL:URL parameters:parameters] : nil;
+        responseCache ? [AppNetWorkCache setHttpCache:responseObject URL:URL parameters:parameters] : nil;
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
@@ -161,7 +161,7 @@ static NSMutableArray *_allSessionTask;
                    failure:(HttpRequestFailed)failure
 {
     //读取缓存
-    responseCache ? responseCache([PPNetworkCache httpCacheForURL:URL parameters:parameters]) : nil;
+    responseCache ? responseCache([AppNetWorkCache httpCacheForURL:URL parameters:parameters]) : nil;
     
     NSURLSessionTask *sessionTask = [_sessionManager POST:URL parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
         
@@ -170,7 +170,7 @@ static NSMutableArray *_allSessionTask;
         [[self allSessionTask] removeObject:task];
         success ? success(responseObject) : nil;
         //对数据进行异步缓存
-        responseCache ? [PPNetworkCache setHttpCache:responseObject URL:URL parameters:parameters] : nil;
+        responseCache ? [AppNetWorkCache setHttpCache:responseObject URL:URL parameters:parameters] : nil;
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         

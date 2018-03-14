@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "DJMainTabBarVC.h"
+#import "AppMainTabBarVC.h"
 #import "UIImageView+WebCache.h"
 
 @interface AppDelegate ()
@@ -27,7 +27,7 @@
 //项目初始化
 -(void)configApp{
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[DJMainTabBarVC alloc] init];
+    self.window.rootViewController = [[AppMainTabBarVC alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];
     
     //其他配置写在这里

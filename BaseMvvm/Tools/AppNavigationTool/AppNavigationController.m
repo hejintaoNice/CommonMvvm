@@ -1,18 +1,18 @@
 //
-//  DJNavgationController.m
-//  WonderfulDJ
+//  AppNavigationController.m
+//  BaseMvvm
 //
-//  Created by 何锦涛 on 2017/11/6.
-//  Copyright © 2017年 hither. All rights reserved.
+//  Created by 何锦涛 on 2018/3/14.
+//  Copyright © 2018年 hither. All rights reserved.
 //
 
-#import "DJNavgationController.h"
+#import "AppNavigationController.h"
 
-@interface DJNavgationController ()
+@interface AppNavigationController ()
 
 @end
 
-@implementation DJNavgationController
+@implementation AppNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,6 +23,11 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.edgesForExtendedLayout = UIRectEdgeAll;
     
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 // 重写push方法,方便统一处理返回按钮
@@ -47,12 +52,5 @@
 - (void)back{
     [self popViewControllerAnimated:YES];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 
 @end

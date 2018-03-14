@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^tableSelectionBlock)(id model);
+typedef void (^tableSelectionBlock)(id model,NSIndexPath *indexPath);
 
 @interface HJTTableViewBindingHelper : NSObject<UITableViewDataSource, UITableViewDelegate>
 {

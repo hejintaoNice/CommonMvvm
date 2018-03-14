@@ -9,6 +9,9 @@
 #ifndef MacroDefine_h
 #define MacroDefine_h
 //#####################################################################################
+//字体
+#define HJTFont(a) [UIFont fontWithName:@"Helvetica" size:(a)]
+
 //颜色相关
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
 #define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(1.f)]

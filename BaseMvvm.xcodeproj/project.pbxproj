@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		211097022058B6ED00C43E2B /* RefreshTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 211097012058B6ED00C43E2B /* RefreshTimeModel.m */; };
+		211097072058B99A00C43E2B /* AppTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 211097062058B99A00C43E2B /* AppTextView.m */; };
+		2110970D2058BDDB00C43E2B /* HJTDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2110970B2058BDDB00C43E2B /* HJTDateTool.m */; };
+		2110970E2058BDDB00C43E2B /* HJTDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2110970C2058BDDB00C43E2B /* HJTDateFormatter.m */; };
+		211097122058BE9500C43E2B /* HJTStringTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 211097112058BE9400C43E2B /* HJTStringTool.m */; };
+		211097162058BF8400C43E2B /* LGButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 211097152058BF8400C43E2B /* LGButton.m */; };
+		2110971A2058C30E00C43E2B /* AppMainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 211097192058C30E00C43E2B /* AppMainTabBarVC.m */; };
+		2110971D2058C52200C43E2B /* AppNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2110971C2058C52200C43E2B /* AppNavigationController.m */; };
+		211097202058C5D500C43E2B /* AppSmoothTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2110971F2058C5D500C43E2B /* AppSmoothTableView.m */; };
+		211097232058C67700C43E2B /* AppNetWorkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 211097222058C67700C43E2B /* AppNetWorkCache.m */; };
 		21C96B092050E72C003F7A19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C96B082050E72C003F7A19 /* AppDelegate.m */; };
 		21C96B0C2050E72C003F7A19 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C96B0B2050E72C003F7A19 /* ViewController.m */; };
 		21C96B0F2050E72C003F7A19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C96B0D2050E72C003F7A19 /* Main.storyboard */; };
@@ -15,17 +25,13 @@
 		21C96B172050E72C003F7A19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C96B162050E72C003F7A19 /* main.m */; };
 		21C96B212050E72C003F7A19 /* BaseMvvmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C96B202050E72C003F7A19 /* BaseMvvmTests.m */; };
 		21C96B2C2050E72C003F7A19 /* BaseMvvmUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C96B2B2050E72C003F7A19 /* BaseMvvmUITests.m */; };
-		21C96B4020513CA3003F7A19 /* PPNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C96B3D20513CA3003F7A19 /* PPNetworkCache.m */; };
 		21C96B4120513CA3003F7A19 /* PPNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C96B3F20513CA3003F7A19 /* PPNetworkHelper.m */; };
 		21C96B4920513F81003F7A19 /* VTGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C96B4820513F81003F7A19 /* VTGridViewCell.m */; };
-		21DAA60720516CC400E04BE4 /* SmoothTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DAA60620516CC400E04BE4 /* SmoothTableView.m */; };
 		21DAA60E20516D5F00E04BE4 /* HJTCollectionBindHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DAA60D20516D5F00E04BE4 /* HJTCollectionBindHelper.m */; };
 		21DAA61120516D6A00E04BE4 /* HJTTableViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DAA60F20516D6A00E04BE4 /* HJTTableViewBindingHelper.m */; };
 		21DAA61520516DA000E04BE4 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DAA61420516DA000E04BE4 /* BaseViewModel.m */; };
 		21DAA61820516E8C00E04BE4 /* ComicRecommend.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DAA61720516E8C00E04BE4 /* ComicRecommend.m */; };
 		21DAA61B2051706B00E04BE4 /* ComicListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DAA61A2051706B00E04BE4 /* ComicListViewModel.m */; };
-		21DAA62020517A1200E04BE4 /* DJNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DAA61F20517A1200E04BE4 /* DJNavgationController.m */; };
-		21DAA62420517A4300E04BE4 /* DJMainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DAA62220517A4300E04BE4 /* DJMainTabBarVC.m */; };
 		21DAA6292051959D00E04BE4 /* ComicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DAA6282051959D00E04BE4 /* ComicDetailViewController.m */; };
 		34C7507BC2504F85F9FDE57C /* libPods-BaseMvvm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEF17EA43A199A5E43B5FE8 /* libPods-BaseMvvm.a */; };
 /* End PBXBuildFile section */
@@ -48,6 +54,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		211097002058B6ED00C43E2B /* RefreshTimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreshTimeModel.h; sourceTree = "<group>"; };
+		211097012058B6ED00C43E2B /* RefreshTimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshTimeModel.m; sourceTree = "<group>"; };
+		211097052058B99A00C43E2B /* AppTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppTextView.h; sourceTree = "<group>"; };
+		211097062058B99A00C43E2B /* AppTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppTextView.m; sourceTree = "<group>"; };
+		211097092058BDDB00C43E2B /* HJTDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTDateFormatter.h; sourceTree = "<group>"; };
+		2110970A2058BDDB00C43E2B /* HJTDateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTDateTool.h; sourceTree = "<group>"; };
+		2110970B2058BDDB00C43E2B /* HJTDateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJTDateTool.m; sourceTree = "<group>"; };
+		2110970C2058BDDB00C43E2B /* HJTDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJTDateFormatter.m; sourceTree = "<group>"; };
+		211097102058BE9400C43E2B /* HJTStringTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTStringTool.h; sourceTree = "<group>"; };
+		211097112058BE9400C43E2B /* HJTStringTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJTStringTool.m; sourceTree = "<group>"; };
+		211097142058BF8400C43E2B /* LGButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGButton.h; sourceTree = "<group>"; };
+		211097152058BF8400C43E2B /* LGButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGButton.m; sourceTree = "<group>"; };
+		211097182058C30E00C43E2B /* AppMainTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppMainTabBarVC.h; sourceTree = "<group>"; };
+		211097192058C30E00C43E2B /* AppMainTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppMainTabBarVC.m; sourceTree = "<group>"; };
+		2110971B2058C52200C43E2B /* AppNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppNavigationController.h; sourceTree = "<group>"; };
+		2110971C2058C52200C43E2B /* AppNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppNavigationController.m; sourceTree = "<group>"; };
+		2110971E2058C5D500C43E2B /* AppSmoothTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppSmoothTableView.h; sourceTree = "<group>"; };
+		2110971F2058C5D500C43E2B /* AppSmoothTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppSmoothTableView.m; sourceTree = "<group>"; };
+		211097212058C67700C43E2B /* AppNetWorkCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppNetWorkCache.h; sourceTree = "<group>"; };
+		211097222058C67700C43E2B /* AppNetWorkCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppNetWorkCache.m; sourceTree = "<group>"; };
 		21C96B042050E72C003F7A19 /* BaseMvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseMvvm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C96B072050E72C003F7A19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		21C96B082050E72C003F7A19 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,15 +92,11 @@
 		21C96B2D2050E72C003F7A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21C96B392050E7D8003F7A19 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		21C96B3B20513CA3003F7A19 /* ServerAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerAddress.h; sourceTree = "<group>"; };
-		21C96B3C20513CA3003F7A19 /* PPNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetworkCache.h; sourceTree = "<group>"; };
-		21C96B3D20513CA3003F7A19 /* PPNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNetworkCache.m; sourceTree = "<group>"; };
 		21C96B3E20513CA3003F7A19 /* PPNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetworkHelper.h; sourceTree = "<group>"; };
 		21C96B3F20513CA3003F7A19 /* PPNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNetworkHelper.m; sourceTree = "<group>"; };
 		21C96B4720513F81003F7A19 /* VTGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTGridViewCell.h; sourceTree = "<group>"; };
 		21C96B4820513F81003F7A19 /* VTGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTGridViewCell.m; sourceTree = "<group>"; };
 		21C96B4C20513FFD003F7A19 /* MacroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDefine.h; sourceTree = "<group>"; };
-		21DAA60520516CC400E04BE4 /* SmoothTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmoothTableView.h; sourceTree = "<group>"; };
-		21DAA60620516CC400E04BE4 /* SmoothTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmoothTableView.m; sourceTree = "<group>"; };
 		21DAA60920516D2000E04BE4 /* HJTBindViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTBindViewDelegate.h; sourceTree = "<group>"; };
 		21DAA60C20516D5F00E04BE4 /* HJTCollectionBindHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTCollectionBindHelper.h; sourceTree = "<group>"; };
 		21DAA60D20516D5F00E04BE4 /* HJTCollectionBindHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJTCollectionBindHelper.m; sourceTree = "<group>"; };
@@ -86,10 +108,6 @@
 		21DAA61720516E8C00E04BE4 /* ComicRecommend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComicRecommend.m; sourceTree = "<group>"; };
 		21DAA6192051706B00E04BE4 /* ComicListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComicListViewModel.h; sourceTree = "<group>"; };
 		21DAA61A2051706B00E04BE4 /* ComicListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComicListViewModel.m; sourceTree = "<group>"; };
-		21DAA61E20517A1200E04BE4 /* DJNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJNavgationController.h; sourceTree = "<group>"; };
-		21DAA61F20517A1200E04BE4 /* DJNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJNavgationController.m; sourceTree = "<group>"; };
-		21DAA62220517A4300E04BE4 /* DJMainTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJMainTabBarVC.m; sourceTree = "<group>"; };
-		21DAA62320517A4300E04BE4 /* DJMainTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJMainTabBarVC.h; sourceTree = "<group>"; };
 		21DAA6272051959D00E04BE4 /* ComicDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComicDetailViewController.h; sourceTree = "<group>"; };
 		21DAA6282051959D00E04BE4 /* ComicDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComicDetailViewController.m; sourceTree = "<group>"; };
 		2AEF17EA43A199A5E43B5FE8 /* libPods-BaseMvvm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseMvvm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +141,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		211097032058B85B00C43E2B /* AppRefreshTimeTool */ = {
+			isa = PBXGroup;
+			children = (
+				211097002058B6ED00C43E2B /* RefreshTimeModel.h */,
+				211097012058B6ED00C43E2B /* RefreshTimeModel.m */,
+			);
+			path = AppRefreshTimeTool;
+			sourceTree = "<group>";
+		};
+		211097042058B95200C43E2B /* AppTextView */ = {
+			isa = PBXGroup;
+			children = (
+				211097052058B99A00C43E2B /* AppTextView.h */,
+				211097062058B99A00C43E2B /* AppTextView.m */,
+			);
+			path = AppTextView;
+			sourceTree = "<group>";
+		};
+		211097082058BDA700C43E2B /* AppDateTool */ = {
+			isa = PBXGroup;
+			children = (
+				211097092058BDDB00C43E2B /* HJTDateFormatter.h */,
+				2110970C2058BDDB00C43E2B /* HJTDateFormatter.m */,
+				2110970A2058BDDB00C43E2B /* HJTDateTool.h */,
+				2110970B2058BDDB00C43E2B /* HJTDateTool.m */,
+			);
+			path = AppDateTool;
+			sourceTree = "<group>";
+		};
+		2110970F2058BE7900C43E2B /* AppStringTool */ = {
+			isa = PBXGroup;
+			children = (
+				211097102058BE9400C43E2B /* HJTStringTool.h */,
+				211097112058BE9400C43E2B /* HJTStringTool.m */,
+			);
+			path = AppStringTool;
+			sourceTree = "<group>";
+		};
+		211097132058BF2F00C43E2B /* AppButton */ = {
+			isa = PBXGroup;
+			children = (
+				211097142058BF8400C43E2B /* LGButton.h */,
+				211097152058BF8400C43E2B /* LGButton.m */,
+			);
+			path = AppButton;
+			sourceTree = "<group>";
+		};
 		21C96AFB2050E72C003F7A19 = {
 			isa = PBXGroup;
 			children = (
@@ -180,16 +245,15 @@
 			path = BaseMvvmUITests;
 			sourceTree = "<group>";
 		};
-		21C96B3A20513C82003F7A19 /* NetTool */ = {
+		21C96B3A20513C82003F7A19 /* AppNetTool */ = {
 			isa = PBXGroup;
 			children = (
-				21C96B3C20513CA3003F7A19 /* PPNetworkCache.h */,
-				21C96B3D20513CA3003F7A19 /* PPNetworkCache.m */,
 				21C96B3E20513CA3003F7A19 /* PPNetworkHelper.h */,
 				21C96B3F20513CA3003F7A19 /* PPNetworkHelper.m */,
-				21C96B3B20513CA3003F7A19 /* ServerAddress.h */,
+				211097212058C67700C43E2B /* AppNetWorkCache.h */,
+				211097222058C67700C43E2B /* AppNetWorkCache.m */,
 			);
-			path = NetTool;
+			path = AppNetTool;
 			sourceTree = "<group>";
 		};
 		21C96B4220513F0B003F7A19 /* View */ = {
@@ -231,7 +295,6 @@
 		21C96B4620513F2A003F7A19 /* ComicList */ = {
 			isa = PBXGroup;
 			children = (
-				21DAA60820516D0F00E04BE4 /* BindHelper */,
 				21C96B4520513F1F003F7A19 /* ViewModel */,
 				21C96B4420513F18003F7A19 /* Controller */,
 				21C96B4320513F14003F7A19 /* Model */,
@@ -243,26 +306,33 @@
 		21C96B4B20513FE4003F7A19 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				21C96B3B20513CA3003F7A19 /* ServerAddress.h */,
 				21C96B4C20513FFD003F7A19 /* MacroDefine.h */,
 				21C96B392050E7D8003F7A19 /* PrefixHeader.pch */,
-				21DAA62120517A3200E04BE4 /* MainTabVC */,
-				21DAA61D20517A0500E04BE4 /* NavigationTool */,
-				21DAA60420516C8D00E04BE4 /* SmoothTableView */,
-				21C96B3A20513C82003F7A19 /* NetTool */,
+				21DAA60820516D0F00E04BE4 /* AppBindViewHelper */,
+				211097132058BF2F00C43E2B /* AppButton */,
+				2110970F2058BE7900C43E2B /* AppStringTool */,
+				211097082058BDA700C43E2B /* AppDateTool */,
+				211097042058B95200C43E2B /* AppTextView */,
+				211097032058B85B00C43E2B /* AppRefreshTimeTool */,
+				21DAA62120517A3200E04BE4 /* AppMainTabVC */,
+				21DAA61D20517A0500E04BE4 /* AppNavigationTool */,
+				21DAA60420516C8D00E04BE4 /* AppSmoothTableView */,
+				21C96B3A20513C82003F7A19 /* AppNetTool */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		21DAA60420516C8D00E04BE4 /* SmoothTableView */ = {
+		21DAA60420516C8D00E04BE4 /* AppSmoothTableView */ = {
 			isa = PBXGroup;
 			children = (
-				21DAA60520516CC400E04BE4 /* SmoothTableView.h */,
-				21DAA60620516CC400E04BE4 /* SmoothTableView.m */,
+				2110971E2058C5D500C43E2B /* AppSmoothTableView.h */,
+				2110971F2058C5D500C43E2B /* AppSmoothTableView.m */,
 			);
-			path = SmoothTableView;
+			path = AppSmoothTableView;
 			sourceTree = "<group>";
 		};
-		21DAA60820516D0F00E04BE4 /* BindHelper */ = {
+		21DAA60820516D0F00E04BE4 /* AppBindViewHelper */ = {
 			isa = PBXGroup;
 			children = (
 				21DAA60920516D2000E04BE4 /* HJTBindViewDelegate.h */,
@@ -270,7 +340,7 @@
 				21DAA60B20516D3900E04BE4 /* CollectionViewBindHelper */,
 				21DAA60A20516D2F00E04BE4 /* TableViewBindHelper */,
 			);
-			path = BindHelper;
+			path = AppBindViewHelper;
 			sourceTree = "<group>";
 		};
 		21DAA60A20516D2F00E04BE4 /* TableViewBindHelper */ = {
@@ -300,22 +370,22 @@
 			path = BaseViewModel;
 			sourceTree = "<group>";
 		};
-		21DAA61D20517A0500E04BE4 /* NavigationTool */ = {
+		21DAA61D20517A0500E04BE4 /* AppNavigationTool */ = {
 			isa = PBXGroup;
 			children = (
-				21DAA61E20517A1200E04BE4 /* DJNavgationController.h */,
-				21DAA61F20517A1200E04BE4 /* DJNavgationController.m */,
+				2110971B2058C52200C43E2B /* AppNavigationController.h */,
+				2110971C2058C52200C43E2B /* AppNavigationController.m */,
 			);
-			path = NavigationTool;
+			path = AppNavigationTool;
 			sourceTree = "<group>";
 		};
-		21DAA62120517A3200E04BE4 /* MainTabVC */ = {
+		21DAA62120517A3200E04BE4 /* AppMainTabVC */ = {
 			isa = PBXGroup;
 			children = (
-				21DAA62320517A4300E04BE4 /* DJMainTabBarVC.h */,
-				21DAA62220517A4300E04BE4 /* DJMainTabBarVC.m */,
+				211097182058C30E00C43E2B /* AppMainTabBarVC.h */,
+				211097192058C30E00C43E2B /* AppMainTabBarVC.m */,
 			);
-			path = MainTabVC;
+			path = AppMainTabVC;
 			sourceTree = "<group>";
 		};
 		21DAA6262051958600E04BE4 /* ComicDetail */ = {
@@ -535,18 +605,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				21C96B0C2050E72C003F7A19 /* ViewController.m in Sources */,
-				21DAA62420517A4300E04BE4 /* DJMainTabBarVC.m in Sources */,
-				21DAA60720516CC400E04BE4 /* SmoothTableView.m in Sources */,
+				211097072058B99A00C43E2B /* AppTextView.m in Sources */,
 				21DAA61B2051706B00E04BE4 /* ComicListViewModel.m in Sources */,
+				2110971A2058C30E00C43E2B /* AppMainTabBarVC.m in Sources */,
 				21C96B4120513CA3003F7A19 /* PPNetworkHelper.m in Sources */,
 				21DAA61120516D6A00E04BE4 /* HJTTableViewBindingHelper.m in Sources */,
+				2110970E2058BDDB00C43E2B /* HJTDateFormatter.m in Sources */,
 				21DAA60E20516D5F00E04BE4 /* HJTCollectionBindHelper.m in Sources */,
-				21C96B4020513CA3003F7A19 /* PPNetworkCache.m in Sources */,
+				211097202058C5D500C43E2B /* AppSmoothTableView.m in Sources */,
+				211097232058C67700C43E2B /* AppNetWorkCache.m in Sources */,
 				21C96B172050E72C003F7A19 /* main.m in Sources */,
-				21DAA62020517A1200E04BE4 /* DJNavgationController.m in Sources */,
 				21C96B4920513F81003F7A19 /* VTGridViewCell.m in Sources */,
+				2110970D2058BDDB00C43E2B /* HJTDateTool.m in Sources */,
+				211097162058BF8400C43E2B /* LGButton.m in Sources */,
+				2110971D2058C52200C43E2B /* AppNavigationController.m in Sources */,
 				21C96B092050E72C003F7A19 /* AppDelegate.m in Sources */,
+				211097022058B6ED00C43E2B /* RefreshTimeModel.m in Sources */,
 				21DAA61820516E8C00E04BE4 /* ComicRecommend.m in Sources */,
+				211097122058BE9500C43E2B /* HJTStringTool.m in Sources */,
 				21DAA6292051959D00E04BE4 /* ComicDetailViewController.m in Sources */,
 				21DAA61520516DA000E04BE4 /* BaseViewModel.m in Sources */,
 			);

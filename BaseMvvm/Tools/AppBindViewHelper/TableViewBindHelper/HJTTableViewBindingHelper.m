@@ -87,7 +87,7 @@
 #pragma mark - UITableViewDelegate methods
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (_selectionBlock) {
-        _selectionBlock(_data[indexPath.row]);
+        _selectionBlock(_data[indexPath.row],indexPath);
     }
 }
 

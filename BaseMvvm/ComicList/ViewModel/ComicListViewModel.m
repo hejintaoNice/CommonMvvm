@@ -37,7 +37,7 @@
     
     self.current_page = 1;
     
-    [PPNetworkHelper GET:[NSString stringWithFormat:@"%@%@&orderby=%@&page=1",GetCategoryList,@"?comic_sort=baihe",@"click"] parameters:nil success:^(id responseObject) {
+    [PPNetworkHelper GET:[NSString stringWithFormat:@"%@%@&orderby=%@&page=1",GetCategoryList,@"?comic_sort=rexue",@"click"] parameters:nil success:^(id responseObject) {
         
         if (self.comicDataAry.count > 0) {
             [self.comicDataAry removeAllObjects];

@@ -18,9 +18,15 @@
 #import "MacroDefine.h"
 #import <JSONModel.h>
 
+//TableView 、CollectionView绑定代理
 #import "HJTCollectionBindHelper.h"
 #import "HJTTableViewBindingHelper.h"
+//绑定View的代理
 #import "HJTBindViewDelegate.h"
+//刷新DNS的时间戳
+#import "RefreshTimeModel.h"
+//带placeholder的TextView
+#import "AppTextView.h"
 
 
 #endif /* PrefixHeader_pch */

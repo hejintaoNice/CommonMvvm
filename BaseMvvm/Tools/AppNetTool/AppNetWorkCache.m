@@ -1,18 +1,18 @@
 //
-//  PPNetworkCache.m
-//  PPNetworkHelper
+//  AppNetWorkCache.m
+//  BaseMvvm
 //
-//  Created by AndyPang on 16/8/12.
-//  Copyright © 2016年 AndyPang. All rights reserved.
+//  Created by 何锦涛 on 2018/3/14.
+//  Copyright © 2018年 hither. All rights reserved.
 //
 
-#import "PPNetworkCache.h"
+#import "AppNetWorkCache.h"
 #import "YYCache.h"
 
-@implementation PPNetworkCache
+@implementation AppNetWorkCache
+
 static NSString *const NetworkResponseCache = @"NetworkResponseCache";
 static YYCache *_dataCache;
-
 
 + (void)initialize
 {
@@ -56,16 +56,4 @@ static YYCache *_dataCache;
     return cacheKey;
 }
 
-#pragma mark - 过期方法
-+ (void)saveHttpCache:(id)httpCache forKey:(NSString *)key
-{
-    [self setHttpCache:httpCache URL:key parameters:nil];
-}
-
-+ (id)getHttpCacheForKey:(NSString *)key
-{
-    return [self httpCacheForURL:key parameters:nil];
-}
-
 @end
-

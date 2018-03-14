@@ -28,9 +28,10 @@ DefineCellID(VTGridViewCell_re_id,@"VTGridViewCell")
     
     [self configUI];
     //配置刷新
-    [self configRefresh];
+    [self configHeaderRefresh];
     //从服务器获取数据
     [self getNewDataFromServer];
+    
 }
 
 - (void)configUI{
@@ -41,12 +42,16 @@ DefineCellID(VTGridViewCell_re_id,@"VTGridViewCell")
     
 }
 
-- (void)configRefresh{
+- (void)configHeaderRefresh{
     W_S
     self.collectionView.mj_header = [MJRefreshGifHeader headerWithRefreshingBlock:^{
         [weakSelf getNewDataFromServer];
     }];
     
+}
+
+- (void)configFooterRefresh{
+    W_S
     self.collectionView.mj_footer = [MJRefreshAutoGifFooter footerWithRefreshingBlock:^{
         [weakSelf getMoreDataFromServer];
     }];
@@ -61,6 +66,7 @@ DefineCellID(VTGridViewCell_re_id,@"VTGridViewCell")
         
         if (suc) {
             [weakSelf configUIWithData:resultArray];
+            [weakSelf configFooterRefresh];
         }
     }];
 }
@@ -117,22 +123,11 @@ DefineCellID(VTGridViewCell_re_id,@"VTGridViewCell")
     if (!_collectionView) {
         
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        NSInteger _cellSpace = 0;
-        
-        if (IS_IPHONE_4_OR_LESS) {
-            _cellSpace = 0.62 * SCREEN_WIDTH-35;
-        }else if (IS_IPHONE_5AND5S){
-            _cellSpace = 0.62 * SCREEN_WIDTH-40;
-        }else if (IS_IPHONE_6AND6S){
-            _cellSpace = 0.62 * SCREEN_WIDTH-48;
-        }else if (IS_IPHONE_6PAND6SP){
-            _cellSpace = 0.62 * SCREEN_WIDTH-55;
-        }
         
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;
         layout.sectionInset = UIEdgeInsetsMake(15, 15, 15, 15);
         
-        layout.itemSize = CGSizeMake((SCREEN_WIDTH-60)/3, _cellSpace);
+        layout.itemSize = CGSizeMake((SCREEN_WIDTH-60)/3, (4 *(SCREEN_WIDTH - 60) / 9.0 + 34));
         
         _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
         
